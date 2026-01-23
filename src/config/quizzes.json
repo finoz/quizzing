@@ -1,0 +1,15 @@
+{
+  "appTitle": "Quiz Informatica",
+  "penaltyPoints": -0.5,
+  "quizzes": [
+    {
+      "id": "browser-web",
+      "titolo": "Browser e Navigazione Web",
+      "categoria": "Teoria del Web",
+      "descrizione": "Domande su browser, protocolli HTTP, architettura client-server",
+      "csvUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTQSJkZFsptbjKf6-GOladOVUO1SC4F5ZAiw8OG9gkZ1pRjUxj2bYmAV9cn21U4w63S2049fGKuI6jg/pub?output=csv",
+      "colore": "#3b82f6",
+      "icona": "🌐"
+    }
+  ]
+}
