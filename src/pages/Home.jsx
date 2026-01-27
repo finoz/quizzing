@@ -46,6 +46,7 @@ const Home = () => {
 
       <footer className="footer">
         <p>Liceo Villoresi - Informatica</p>
+        <p>{Quiz Informatica new Date().getFullYear()} by FNZ</p>
       </footer>
     </div>
   )
