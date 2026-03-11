@@ -21,6 +21,22 @@ const Home = () => {
         <p className="subtitle">Scegli un quiz per iniziare l'esercitazione</p>
       </header>
 
+      {config.esercitazioni?.length > 0 && (
+        <section className="category-section">
+          <h2 className="category-title">Esercitazioni pratiche</h2>
+          <div className="quiz-grid">
+            <Link to="/esercitazioni" className="quiz-card" style={{ borderLeftColor: '#10b981' }}>
+              <div className="quiz-icon">🛠️</div>
+              <div className="quiz-content">
+                <h3 className="quiz-title">Esercitazioni HTML</h3>
+{/*                 <p className="quiz-description">{config.esercitazioni.length} esercitazioni disponibili</p> */}
+              </div>
+              <div className="quiz-arrow">→</div>
+            </Link>
+          </div>
+        </section>
+      )}
+
       {Object.entries(quizzesByCategory).map(([categoria, quizList]) => (
         <section key={categoria} className="category-section">
           <h2 className="category-title">{categoria}</h2>
@@ -46,7 +62,7 @@ const Home = () => {
 
       <footer className="footer">
         <p>Liceo Villoresi - Informatica</p>
-        <p>{Quiz Informatica new Date().getFullYear()} by FNZ</p>
+        <p>© {new Date().getFullYear()} by FNZ</p>
       </footer>
     </div>
   )

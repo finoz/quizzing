@@ -11,5 +11,23 @@
       "colore": "#3b82f6",
       "icona": "🌐"
     }
+  ],
+  "esercitazioni": [
+    {
+      "id": "es-html-giornalino",
+      "titolo": "Il Corriere del Villoresi",
+      "descrizione": "Analizza il codice HTML di un fantomatico giornalino scolastico",
+      "url": "/esercitazioni/giornalino.html",
+      "icona": "📰",
+      "colore": "#f97316"
+    },
+    {
+      "id": "es-html-biblioteca",
+      "titolo": "La biblioteca del Villoresi",
+      "descrizione": "Trova gli errori nel codice HTML",
+      "url": "/esercitazioni/biblioteca.html",
+      "icona": "📚",
+      "colore": "#eab308"
+    }
   ]
 }

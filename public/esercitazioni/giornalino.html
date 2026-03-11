@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il Corriere del Villoresi - Giornalino Scolastico</title>
+  <meta name="description" content="Il giornalino ufficiale degli studenti del Liceo Villoresi di Monza">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, serif; color: #1a1a1a; background: #fafaf7; }
+    header { background: #1c3557; color: white; padding: 24px 40px; }
+    header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+    header p { font-size: 0.95rem; margin-top: 6px; opacity: 0.8; }
+    nav { background: #f0ebe0; border-bottom: 2px solid #c8b99a; padding: 0 40px; }
+    nav ul { list-style: none; display: flex; gap: 0; }
+    nav ul li a { display: block; padding: 14px 20px; text-decoration: none; color: #1c3557; font-family: Arial, sans-serif; font-size: 0.9rem; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px; }
+    nav ul li a:hover { background: #1c3557; color: white; }
+    main { max-width: 960px; margin: 40px auto; padding: 0 40px; display: grid; grid-template-columns: 2fr 1fr; gap: 40px; }
+    h2 { font-size: 1.5rem; color: #1c3557; margin-bottom: 12px; }
+    h3 { font-size: 1.1rem; color: #2e5e8e; margin-bottom: 8px; }
+    p { line-height: 1.7; margin-bottom: 14px; color: #333; }
+    article { margin-bottom: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px; }
+    article:last-child { border-bottom: none; }
+    blockquote { border-left: 4px solid #c8b99a; padding: 12px 20px; margin: 16px 0; background: #f7f3eb; font-style: italic; color: #555; }
+    blockquote cite { display: block; margin-top: 8px; font-size: 0.85rem; font-style: normal; color: #888; }
+    aside { background: #f0ebe0; padding: 24px; border-radius: 4px; align-self: start; }
+    aside h2 { font-size: 1.1rem; margin-bottom: 16px; border-bottom: 2px solid #c8b99a; padding-bottom: 8px; }
+    aside ul { list-style: none; }
+    aside ul li { padding: 8px 0; border-bottom: 1px solid #ddd; font-size: 0.9rem; }
+    aside ul li:last-child { border-bottom: none; }
+    table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9rem; }
+    th { background: #1c3557; color: white; padding: 10px 14px; text-align: left; }
+    td { padding: 9px 14px; border-bottom: 1px solid #ddd; }
+    tr:nth-child(even) td { background: #f7f3eb; }
+    img { max-width: 100%; height: auto; margin: 16px 0; border: 1px solid #ddd; }
+    footer { background: #1c3557; color: #ccc; text-align: center; padding: 24px 40px; margin-top: 60px; font-size: 0.85rem; }
+    footer a { color: #a8c4e0; text-decoration: none; }
+    .section-articles { grid-column: 1; }
+    .section-sidebar { grid-column: 2; }
+    strong { color: #1a1a1a; }
+    em { color: #555; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Il Corriere del Villoresi</h1>
+    <p>Giornalino ufficiale degli studenti &mdash; Anno scolastico 2024/2025</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="attualita.html">Attualità</a></li>
+      <li><a href="sport.html">Sport</a></li>
+      <li><a href="cultura.html">Cultura</a></li>
+      <li><a href="redazione.html">La Redazione</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section class="section-articles">
+
+      <article>
+        <h2>La gita a Roma: tre giorni tra storia e caos</h2>
+        <p>
+          Dal 14 al 16 marzo le classi terze hanno visitato Roma nell'ambito del progetto
+          <strong>Cittadinanza Attiva</strong>. Tre giorni intensi, tra Colosseo, Fori Imperiali
+          e una visita a sorpresa alla Camera dei Deputati.
+        </p>
+        <p>
+          Il momento più apprezzato? Senza dubbio la passeggiata serale a Trastevere,
+          che ha trasformato una gita scolastica in qualcosa di <em>davvero indimenticabile</em>.
+        </p>
+        <blockquote>
+          Non pensavo che Roma mi avrebbe colpito così. Ho capito perché si dice che è una città eterna.
+          <cite>&mdash; Martina R., classe 3SA</cite>
+        </blockquote>
+        <p>
+          Leggi il <a href="reportage-roma.html">reportage completo con le foto</a> nella sezione Attualità.
+        </p>
+      </article>
+
+      <article>
+        <h2>Olimpiadi della Matematica: Villoresi sul podio</h2>
+        <p>
+          Due studenti del nostro liceo si sono classificati tra i primi dieci nella fase
+          provinciale delle Olimpiadi della Matematica. Un risultato <strong>storico</strong>
+          per la nostra scuola.
+        </p>
+
+        <h3>I risultati della fase provinciale</h3>
+        <table>
+          <tr>
+            <th>Posizione</th>
+            <th>Nome</th>
+            <th>Classe</th>
+            <th>Punteggio</th>
+          </tr>
+          <tr>
+            <td>3°</td>
+            <td>Luca Ferretti</td>
+            <td>4SA</td>
+            <td>87/100</td>
+          </tr>
+          <tr>
+            <td>7°</td>
+            <td>Sara Colombo</td>
+            <td>5SA</td>
+            <td>79/100</td>
+          </tr>
+          <tr>
+            <td>10°</td>
+            <td>Diego Manzoni</td>
+            <td>4SA</td>
+            <td>74/100</td>
+          </tr>
+        </table>
+
+        <p>
+          I tre studenti si preparano ora per la fase regionale, in programma ad aprile.
+          <em>In bocca al lupo!</em>
+        </p>
+      </article>
+
+      <article>
+        <h2>Intervista alla nuova professoressa di Filosofia</h2>
+        <p>
+          Abbiamo incontrato la prof.ssa Elena Marini, arrivata al Villoresi a ottobre.
+          Ci ha parlato del suo metodo, dei suoi autori preferiti e di come vede la filosofia
+          insegnata ai ragazzi di oggi.
+        </p>
+
+        <h3>Tre libri consigliati dalla prof.ssa Marini</h3>
+        <ol>
+          <li>Albert Camus &mdash; <em>Lo straniero</em></li>
+          <li>Hannah Arendt &mdash; <em>Le origini del totalitarismo</em></li>
+          <li>Umberto Eco &mdash; <em>Il nome della rosa</em></li>
+        </ol>
+
+        <blockquote>
+          La filosofia non è una materia: è un modo di stare nel mondo con gli occhi aperti.
+          <cite>&mdash; Prof.ssa Elena Marini</cite>
+        </blockquote>
+      </article>
+
+    </section>
+
+    <aside class="section-sidebar">
+      <h2>Ultime notizie</h2>
+      <ul>
+        <li>Assemblea d'istituto: venerdì 28 marzo</li>
+        <li>Mostra fotografica in aula magna: dal 2 aprile</li>
+        <li>Torneo di pallavolo inter-classe: iscrizioni aperte</li>
+        <li>Scadenza domande per Erasmus+: 15 aprile</li>
+        <li>Consiglio di classe aperto: 9 aprile ore 17:00</li>
+      </ul>
+    </aside>
+
+  </main>
+
+  <footer>
+    <p>Il Corriere del Villoresi &mdash; Liceo Villoresi, Monza</p>
+    <p>Redazione: <a href="mailto:giornalino@villoresi.edu.it">giornalino@villoresi.edu.it</a></p>
+  </footer>
+
+</body>
+</html>
