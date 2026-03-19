@@ -1,5 +1,19 @@
 import React, { useState, useEffect } from 'react'
 
+function renderMarkdown(text) {
+  if (!text) return text;
+  const parts = text.split(/(`[^`]+`|\*[^*]+\*|_[^_]+_)/);
+  return parts.map((part, i) => {
+    if (part.startsWith('`') && part.endsWith('`'))
+      return <code key={i}>{part.slice(1, -1)}</code>;
+    if (part.startsWith('*') && part.endsWith('*'))
+      return <strong key={i}>{part.slice(1, -1)}</strong>;
+    if (part.startsWith('_') && part.endsWith('_'))
+      return <em key={i}>{part.slice(1, -1)}</em>;
+    return part;
+  });
+}
+
 const QuizEngine = ({ csvUrl, penaltyPoints = -0.5, quizColor = '#2563eb' }) => {
   const [questions, setQuestions] = useState([])
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -191,7 +205,7 @@ const QuizEngine = ({ csvUrl, penaltyPoints = -0.5, quizColor = '#2563eb' }) => 
         </div>
       )}
 
-      <h2 className="question">{currentQuestion.domanda}</h2>
+      <h2 className="question">{renderMarkdown(currentQuestion.domanda)}</h2>
 
       <div className="answers">
         <button
@@ -230,7 +244,7 @@ const QuizEngine = ({ csvUrl, penaltyPoints = -0.5, quizColor = '#2563eb' }) => 
             <span className="feedback-icon">{isCorrect ? '✓' : '✗'}</span>
             <h3>{isCorrect ? 'Risposta corretta!' : 'Risposta sbagliata'}</h3>
           </div>
-          <p className="explanation">{currentQuestion.spiegazione}</p>
+          <p className="explanation">{renderMarkdown(currentQuestion.spiegazione)}</p>
           <button 
             onClick={handleNext} 
             className="btn-next"
