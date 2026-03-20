@@ -331,6 +331,16 @@ body {
   font-size: 20px;
 }
 
+code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+  background: var(--gray-100);
+  border: 1px solid var(--gray-200);
+  border-radius: 4px;
+  padding: 1px 5px;
+  color: var(--gray-900);
+}
+
 .explanation {
   line-height: 1.6;
   margin-bottom: 24px;
