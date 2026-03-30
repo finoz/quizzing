@@ -3,6 +3,15 @@
   "penaltyPoints": -0.5,
   "quizzes": [
     {
+      "id": "logica-programmazione",
+      "titolo": "Logica e tavole di verità",
+      "categoria": "Coding",
+      "descrizione": "Proposizioni, connettivi logici, tavole di verità",
+      "csvUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSdG4XA2N1UIZQ73p62LNPs-jILONkinlD-KuYLSnDvlBQx3OVYV7SI3Gexi4TzMN_t4foybFJ3MFyp/pub?output=csv",
+      "colore": "#4de34f",
+      "icona": "✅"
+    },
+    {
       "id": "browser-web",
       "titolo": "Browser e Navigazione Web",
       "categoria": "WWW",
